@@ -6,7 +6,10 @@ public class Day05 {
      public static void main(String[] args) {
         System.out.print("halo kawan-kawan");
         System.out.print("apa kabar");
-        /*Mencetak teks atau nilai variabel ke konsol tanpa berpindah ke baris baru*/
+        /*
+        Mencetak teks atau nilai variabel ke konsol tanpa berpindah ke baris baru
+        Tidak otomatis berpindah ke baris bari setelah mencetak
+        */
         
         System.out.println("Nurningsih");
         System.out.println("Kim Seok Jin");
