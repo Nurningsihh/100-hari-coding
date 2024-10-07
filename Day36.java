@@ -11,15 +11,15 @@ public class Day36 {
         int a = input.nextInt();
 
         // Mengonversi bilangan desimal ke biner menggunakan angka pengganti
-        String b = "";
-        b += (a / 1000) % 2;  
-        b += (a / 500) % 2;   
-        b += (a / 250) % 2;   
-        b += (a / 125) % 2;   
-        b += (a / 60) % 2;    
-        b += (a / 30) % 2;    
-        b += (a / 15) % 2;    
-        b += a % 2;     
+      String b = "";
+        b += (a / 128) % 2;  
+        b += (a / 64) % 2;   
+        b += (a / 32) % 2;   
+        b += (a / 16) % 2;   
+        b += (a / 8) % 2;    
+        b += (a / 4) % 2;   
+        b += (a / 2) % 2;    
+        b += a % 2;      
 
         // Menampilkan hasil konversi biner
         System.out.println("Hasil konversi ke biner dengan angka pengganti: " + b);
