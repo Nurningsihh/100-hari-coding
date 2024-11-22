@@ -2,36 +2,31 @@
 package niingg_31;
 
 
-public class Day82 {
-     public static void main(String[] args) {
-        
-        int angka = 2024;
-        String strAngka = String.valueOf(angka);
-        System.out.println("String dari integer: " + strAngka);
-
-        
-        double pi = 3.14159;
-        String strPi = String.valueOf(pi);
-        System.out.println("String dari double: " + strPi);
-
-       
-        boolean isNingsih = true;
-        String strBoolean = String.valueOf(isNingsih);
-        System.out.println("String dari boolean: " + strBoolean);
-
-        
-        char huruf = 'N';
-        String strHuruf = String.valueOf(huruf);
-        System.out.println("String dari char: " + strHuruf);
-
-        //
-        char huruf1 = 'a';
-        char huruf2 = 'p';
-        char huruf3 = 'e';
-        char huruf4 = 'l';
-        String strKarakterIndividu = String.valueOf(huruf1) + String.valueOf(huruf2) + 
-                                     String.valueOf(huruf3) + String.valueOf(huruf4);
-        System.out.println("String dari karakter individu: " + strKarakterIndividu);
+public class Day82{
     
-}
+    public static void main(String[] args) {
+        
+        
+        double number1 = 4.3;
+        double number2 = 4.7;
+        float number3 = 5.5f; 
+
+        
+        // Math.ceil() Membulatkan angka ke atas menuju bilangan bulat terdekat.
+        System.out.println("Math.ceil(" + number1 + ") = " + Math.ceil(number1)); 
+        System.out.println("Math.ceil(" + number2 + ") = " + Math.ceil(number2)); 
+
+        
+        
+        //  Math.floor() Membulatkan angka ke bawah menuju bilangan bulat terdekat.
+        System.out.println("Math.floor(" + number1 + ") = " + Math.floor(number1)); 
+        System.out.println("Math.floor(" + number2 + ") = " + Math.floor(number2)); 
+
+        
+        
+        // Math.round() Membulatkan angka ke bilangan bulat terdekat sesuai aturan umum
+        System.out.println("Math.round(" + number1 + ") = " + Math.round(number1)); 
+        System.out.println("Math.round(" + number2 + ") = " + Math.round(number2)); 
+        System.out.println("Math.round(" + number3 + ") = " + Math.round(number3)); 
+    }
 }
