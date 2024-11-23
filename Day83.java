@@ -7,26 +7,29 @@ public class Day83 {
     public static void main(String[] args) {
         
         
-        double number1 = 4.3;
-        double number2 = 4.7;
-        float number3 = 5.5f; 
-
+      int [] angka = {1,2,3,4,5};
+      
+      String [] nama = {"Ningsih", "ulfa"," tirta", "mia", "anggi"};
+      
+      
+      //Menampilkan elemen array angka
+        System.out.println("elemen array angka: ");
+        for (int i = 0; i < angka.length;i++){
+            System.out.println("indeks "+ i+ " = " + angka[i]);    
+        }
         
-        // Math.ceil() Membulatkan angka ke atas menuju bilangan bulat terdekat.
-        System.out.println("Math.ceil(" + number1 + ") = " + Math.ceil(number1)); 
-        System.out.println("Math.ceil(" + number2 + ") = " + Math.ceil(number2)); 
-
+        //Mengubah nilai elemen array angka
+       angka [2] = 30;
+       angka [3] = 40;
+        System.out.println("\nsetelah menguabah  elemen ketiga dan keempat pada array angka: ");
+        for (int i = 0; i < angka.length;i++){
+            System.out.println("indeks "+ i+ " = " + angka[i]); 
+        }
         
-        
-        //  Math.floor() Membulatkan angka ke bawah menuju bilangan bulat terdekat.
-        System.out.println("Math.floor(" + number1 + ") = " + Math.floor(number1)); 
-        System.out.println("Math.floor(" + number2 + ") = " + Math.floor(number2)); 
-
-        
-        
-        // Math.round() Membulatkan angka ke bilangan bulat terdekat sesuai aturan umum
-        System.out.println("Math.round(" + number1 + ") = " + Math.round(number1)); 
-        System.out.println("Math.round(" + number2 + ") = " + Math.round(number2)); 
-        System.out.println("Math.round(" + number3 + ") = " + Math.round(number3)); 
+         //Menampilkan elemen array nama
+        System.out.println("elemen array nama: ");
+        for (int i = 0; i < nama.length;i++){
+            System.out.println("indeks "+ i+ " = " + nama[i]); 
+        }    
     }
 }
